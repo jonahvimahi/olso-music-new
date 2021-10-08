@@ -1,0 +1,65 @@
+.mainNav {
+	width: inherit;
+	height: auto;
+	background-color: #222222a9;
+	display: flex;
+	padding: 1vh 0vh;
+	position: fixed;
+}
+
+.hidden {
+	display: none;
+}
+.spacer{
+	width: 5.3vw;
+}
+.test {
+	height: 7vh;
+	width: 50vw;
+	/* border: solid white 2px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.test2 {
+	height: inherit;
+	width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#olsoLogo {
+	filter: invert(0);
+	height: inherit;
+}
+.logo {
+	height: 3vh;
+	filter: invert(1);
+}
+
+.logoLink {
+	padding: 1vh 1vh;
+	color: white;
+	/* height: 5vh; */
+	width: 2vw;
+}
+.logoLink:hover{
+	cursor:pointer;
+}
+@media screen and (max-width: 768px) {
+	.mainNav {
+		flex-direction: column;
+		position: relative
+	}
+	.test2 {
+        width: 100%;
+		justify-content: space-evenly;
+        /* background-color: #222222a9; */
+	}
+	.test {
+        height: 10vh;
+		width: 100%;
+	}
+}
